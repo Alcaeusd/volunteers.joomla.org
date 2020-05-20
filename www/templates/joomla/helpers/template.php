@@ -38,21 +38,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-NDWJB8',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					],
 				];
 
@@ -65,21 +65,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-PFP9MJ',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -92,21 +92,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-WQNG7Z',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'true',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => true,
+						'advertising' => true,
+						'iab'         => true
 					]
 				];
 
@@ -119,21 +119,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-PZWNZR',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'addthis'   => 'undefined',
-						'addthisId' => 'undefined',
-						'pingdomId' => 'undefined',
-						'gsynd'     => 'undefined'
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'addthis'   => false,
+						'addthisId' => false,
+						'pingdomId' => false,
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'true',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => true,
+						'advertising' => true,
+						'iab'         => true
 					]
 				];
 
@@ -146,21 +146,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-WJ36D4',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -171,7 +171,7 @@ class JoomlaTemplateHelper
 			{
 				$issueTag   = 'jdomain';
 				$siteConfig = (object) [
-					'gtmId'   => 'false',
+					'gtmId'   => false,
 					'scripts' => null,
 					'cookies' => null
 				];
@@ -185,21 +185,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-KR9CX8',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -212,21 +212,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-TRG37W',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -238,21 +238,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'    => 'GTM-MH6RGF',
 					'scripts'  => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies'  => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => true,
+						'iab'         => true
 					],
 					'issueUrl' => 'https://github.com/joomla/jed-issues/issues/new?body=Please%20describe%20the%20problem%20or%20your%20issue'
 				];
@@ -266,21 +266,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-TWSN2R',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'true',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => true,
+						'advertising' => true,
+						'iab'         => true
 					]
 				];
 
@@ -291,23 +291,23 @@ class JoomlaTemplateHelper
 			{
 				$issueTag   = 'jfoundation';
 				$siteConfig = (object) [
-					'gtmId'   => 'false',
+					'gtmId'   => false,
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'false',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => false,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -319,21 +319,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'    => 'GTM-NX46ZP',
 					'scripts'  => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies'  => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					],
 					'issueUrl' => 'https://github.com/joomla/framework.joomla.org/issues/new?title=[FW%20Site]&body=Please%20state%20the%20nature%20of%20your%20development%20emergency'
 				];
@@ -346,21 +346,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-NVGP9X',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -372,21 +372,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'    => 'GTM-5BL9XHS',
 					'scripts'  => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
-						'pingdomId' => 'undefined',
-						'gsynd'     => 'undefined'
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
+						'pingdomId' => false,
+						'gsynd'     => false
 					],
 					'cookies'  => (object) [
-						'performance' => 'false',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => false,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					],
 					'issueUrl' => 'https://github.com/joomla/identity.joomla.org/issues/new?body=Please%20describe%20the%20problem%20or%20your%20issue'
 				];
@@ -399,21 +399,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'    => 'GTM-M7HXQ7',
 					'scripts'  => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies'  => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					],
 					'issueUrl' => 'https://issues.joomla.org/tracker/jtracker'
 				];
@@ -427,21 +427,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-WG7372',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => true,
+						'iab'         => true
 					]
 				];
 
@@ -454,21 +454,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-5GST4C',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'true',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
-						'pingdomId' => 'undefined',
-						'gsynd'     => 'undefined'
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => true,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
+						'pingdomId' => false,
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => true,
+						'iab'         => true
 					]
 				];
 
@@ -481,21 +481,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-K8CR7K',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => true,
+						'iab'         => true
 					]
 				];
 
@@ -508,21 +508,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-NKT9FP',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => true,
+						'iab'         => true
 					]
 				];
 
@@ -535,21 +535,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-KZ7SM9',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -559,7 +559,7 @@ class JoomlaTemplateHelper
 			case 'update.joomla.org':
 			{
 				$siteConfig = (object) [
-					'gtmId'   => 'false',
+					'gtmId'   => false,
 					'scripts' => null,
 					'cookies' => null
 				];
@@ -573,21 +573,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'   => 'GTM-NKZPKQ',
 					'scripts' => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
 						'fbSdk'     => 'facebook-jssdk',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'undefined'
+						'gsynd'     => false
 					],
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					]
 				];
 
@@ -600,21 +600,21 @@ class JoomlaTemplateHelper
 				$siteConfig = (object) [
 					'gtmId'    => 'GTM-P2Z55T',
 					'scripts'  => (object) [
-						'uaId'      => 'undefined',
-						'awId'      => 'undefined',
-						'twitter'   => 'undefined',
-						'fbSdk'     => 'undefined',
-						'fbPixel'   => 'undefined',
-						'carbonads' => 'undefined',
-						'addthisId' => 'undefined',
+						'uaId'      => false,
+						'awId'      => false,
+						'twitter'   => false,
+						'fbSdk'     => false,
+						'fbPixel'   => false,
+						'carbonads' => false,
+						'addthisId' => false,
 						'pingdomId' => '59300ad15992c776ad970068',
-						'gsynd'     => 'true'
+						'gsynd'     => true
 					],
 					'cookies'  => (object) [
-						'performance' => 'true',
-						'functional'  => 'false',
-						'advertising' => 'false',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => false,
+						'advertising' => false,
+						'iab'         => true
 					],
 					'issueUrl' => 'https://github.com/joomla/volunteers.joomla.org/issues/new?body=Please%20describe%20the%20problem%20or%20your%20issue'
 				];
@@ -629,10 +629,10 @@ class JoomlaTemplateHelper
 					'gtmId'   => 'GTM-WWC8WL',
 					'scripts' => null,
 					'cookies' => (object) [
-						'performance' => 'true',
-						'functional'  => 'true',
-						'advertising' => 'true',
-						'iab'         => 'true'
+						'performance' => true,
+						'functional'  => true,
+						'advertising' => true,
+						'iab'         => true
 					],
 				];
 
@@ -642,7 +642,7 @@ class JoomlaTemplateHelper
 			default:
 				$issueTag   = '';
 				$siteConfig = (object) [
-					'gtmId'   => 'false',
+					'gtmId'   => false,
 					'scripts' => null,
 					'cookies' => null
 				];
