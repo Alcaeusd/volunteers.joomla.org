@@ -43,7 +43,7 @@ var config = {
 	statement: {}
 };
 
-window.addEventListener("load", function () {
+window.addEventListener('load', function () {
 	if (ccPerformance) {
 		config.optionalCookies.push({
 			name: 'performance',
@@ -51,10 +51,10 @@ window.addEventListener("load", function () {
 			description: 'Performance cookies help us to improve our website by collecting and reporting information anonymously. We use Analytics services from Google LLC to help analyze how users use the site. IP anonymization is activated on this website.',
 			cookies: ccPerformanceIndex,
 			onAccept: function () {
-				if ((typeof propertyGtmId !== 'undefined') && (propertyGtmId !== 'undefined')) {
+				if ((typeof propertyGtmId !== false) && (propertyGtmId !== false)) {
 					pushGtmScript(propertyGtmId);
 				}
-				if ((typeof propertyUaId !== 'undefined') && (propertyUaId !== 'undefined')) {
+				if ((typeof propertyUaId !== false) && (propertyUaId !== false)) {
 					pushUaScript(propertyUaId);
 				}
 			},
@@ -73,7 +73,7 @@ window.addEventListener("load", function () {
 			description: 'Functionality cookies are responsible for the partial functionality of this website during your navigation. By deactivating them, you might have limited access on our or third party website\'s features.',
 			cookies: ccFunctionalIndex,
 			onAccept: function () {
-				if ((typeof propertyPingdomId !== 'undefined') && (propertyPingdomId !== 'undefined')) {
+				if ((typeof propertyPingdomId !== false) && (propertyPingdomId !== false)) {
 					pushPingdomScript(propertyPingdomId);
 				}
 			},
@@ -91,22 +91,22 @@ window.addEventListener("load", function () {
 			description: 'Advertising cookies help you see some ads based on your preferences. Joomla! serves or hosts ads as they are one of its major financial support.',
 			cookies: ccAdvertisingIndex,
 			onAccept: function () {
-				if ((typeof propertyAwId !== 'undefined') && (propertyAwId !== 'undefined')) {
+				if ((typeof propertyAwId !== false) && (propertyAwId !== false)) {
 					pushAwScript(propertyAwId);
 				}
-				if ((typeof propertyTwitter !== 'undefined') && (propertyTwitter !== 'undefined')) {
+				if ((typeof propertyTwitter !== false) && (propertyTwitter !== false)) {
 					pushTwScript();
 				}
-				if ((typeof propertyFacebookSdk !== 'undefined') && (propertyFacebookSdk !== 'undefined')) {
+				if ((typeof propertyFacebookSdk !== false) && (propertyFacebookSdk !== false)) {
 					pushFbSdkScript(propertyFacebookSdk);
 				}
-				if ((typeof propertyFacebookPixel !== 'undefined') && (propertyFacebookPixel !== 'undefined')) {
+				if ((typeof propertyFacebookPixel !== false) && (propertyFacebookPixel !== false)) {
 					pushFbPxlScript(propertyFacebookPixel);
 				}
-				if ((typeof propertyCarbonAds !== 'undefined') && (propertyCarbonAds !== 'undefined')) {
+				if ((typeof propertyCarbonAds !== false) && (propertyCarbonAds !== false)) {
 					pushCaScript();
 				}
-				if ((typeof propertyAddThisId !== 'undefined') && (propertyAddThisId !== 'undefined')) {
+				if ((typeof propertyAddThisId !== false) && (propertyAddThisId !== false)) {
 					pushAtIdScript(propertyAddThisId);
 				}
 			},
@@ -154,98 +154,98 @@ window.addEventListener("load", function () {
 
 // Push GAnalytics Script into <head></head>
 function pushUaScript(id) {
-	var UaScript = document.createElement("script");
-	var UaGtag = document.createElement("script");
-	var UaGtagContent = document.createTextNode("window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}gtag('js', new Date());	gtag('config', '" + id + "', {'anonymize_ip': true});");
+	var uaScript = document.createElement("script");
+	var uaGtag = document.createElement("script");
+	var uaGtagContent = document.createTextNode("window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);}gtag('js', new Date());	gtag('config', '" + id + "', {'anonymize_ip': true});");
 
-	UaGtag.appendChild(UaGtagContent);
-	UaScript.src = "//www.googletagmanager.com/gtag/js?id=" + id;
+	uaGtag.appendChild(uaGtagContent);
+	uaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
 
-	document.head.appendChild(UaScript);
-	document.head.appendChild(UaGtag);
+	document.head.appendChild(uaScript);
+	document.head.appendChild(uaGtag);
 }
 
 // Push Google Tag Manager Script into <head></head>
 function pushGtmScript(id) {
-	var GtmScript = document.createElement("script");
-	var GtmContent = document.createTextNode("(function (w, d, s, l, i) { w[l] = w[l] || [];w[l].push({'gtm.start':new Date().getTime(), event: 'gtm.js'});var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';j.async = true;j.src ='//www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j, f);})(window, document, 'script', 'dataLayer', '" + id + "');");
+	var gtmScript = document.createElement("script");
+	var gtmContent = document.createTextNode("(function (w, d, s, l, i) { w[l] = w[l] || [];w[l].push({'gtm.start':new Date().getTime(), event: 'gtm.js'});var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';j.async = true;j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j, f);})(window, document, 'script', 'dataLayer', '" + id + "');");
 
-	GtmScript.appendChild(GtmContent);
+	gtmScript.appendChild(gtmContent);
 
-	document.head.appendChild(GtmScript);
+	document.head.appendChild(gtmScript);
 }
 
 // Push Pingdom Script into <head></head>
 function pushPingdomScript(id) {
-	var PingdomScript = document.createElement("script");
-	var PingdomContent = document.createTextNode("var _prum = [['id', '" + id + "'],	['mark', 'firstbyte', (new Date()).getTime()]];(function () {var s = document.getElementsByTagName('script')[0]	, p = document.createElement('script');	p.async = 'async';	p.src = 'https://rum-static.pingdom.net/prum.min.js';	s.parentNode.insertBefore(p, s);})();");
+	var pingdomScript = document.createElement("script");
+	var pingdomContent = document.createTextNode("var _prum = [['id', '" + id + "'],	['mark', 'firstbyte', (new Date()).getTime()]];(function () {var s = document.getElementsByTagName('script')[0]	, p = document.createElement('script');	p.async = 'async';	p.src = 'https://rum-static.pingdom.net/prum.min.js';	s.parentNode.insertBefore(p, s);})();");
 
-	PingdomScript.appendChild(PingdomContent);
+	pingdomScript.appendChild(pingdomContent);
 
-	document.head.appendChild(PingdomScript);
+	document.head.appendChild(pingdomScript);
 }
 
 // Push Google Adwords Script into <head></head>
 function pushAwScript(id) {
-	var AwScript = document.createElement("script");
-	var AwGtag = document.createElement("script");
-	var AwGtagContent = document.createTextNode("window.dataLayer = window.dataLayer || [];function gtag() { dataLayer.push(arguments); }gtag('js', new Date());gtag('config', '" + id + "');");
+	var awScript = document.createElement("script");
+	var awGtag = document.createElement("script");
+	var awGtagContent = document.createTextNode("window.dataLayer = window.dataLayer || [];function gtag() { dataLayer.push(arguments); }gtag('js', new Date());gtag('config', '" + id + "');");
 
-	AwGtag.appendChild(AwGtagContent);
-	AwScript.src = "//www.googletagmanager.com/gtag/js?id=" + id;
+	awGtag.appendChild(awGtagContent);
+	awScript.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
 
-	document.head.appendChild(AwScript);
-	document.head.appendChild(AwGtag);
+	document.head.appendChild(awScript);
+	document.head.appendChild(awGtag);
 }
 
 // Push Twitter widget into <body></body>
 function pushTwScript() {
-	var TwScript = document.createElement("script");
+	var twScript = document.createElement("script");
 
-	TwScript.src = "//platform.twitter.com/widgets.js";
+	twScript.src = "https://platform.twitter.com/widgets.js";
 
-	document.body.appendChild(TwScript);
+	document.body.appendChild(twScript);
 }
 
 // Push Facebook Sdk script into <body></body> (src value must be checked)
 function pushFbSdkScript(id) {
-	var FbScript = document.createElement("script");
-	var FbScriptContent = document.createTextNode("(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId='; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', '" + id + "'));");
+	var fbScript = document.createElement("script");
+	var fbScriptContent = document.createTextNode("(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId='; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', '" + id + "'));");
 
-	FbScript.appendChild(FbScriptContent);
+	fbScript.appendChild(fbScriptContent);
 
-	document.body.appendChild(FbScript);
+	document.body.appendChild(fbScript);
 }
 
 // Push Facebook Pixel script into <body></body> (src value must be checked)
 function pushFbPxlScript(id) {
-	var FbImg = document.createElement("img");
-	var FbScript = document.createElement("script");
-	var FbContent = document.createTextNode("!function (f, b, e, v, n, t, s) {if (f.fbq) return;n = f.fbq = function () {n.callMethod ?n.callMethod.apply(n, arguments) : n.queue.push(arguments)};if (!f._fbq) f._fbq = n;n.push = n;n.loaded = !0;n.version = '2.0';n.queue = [];t = b.createElement(e);t.async = !0;t.src = v;s = b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t, s)}(window, document, 'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '" + id + "');fbq('track', 'PageView');");
+	var fbImg = document.createElement("img");
+	var fbScript = document.createElement("script");
+	var fbContent = document.createTextNode("!function (f, b, e, v, n, t, s) {if (f.fbq) return;n = f.fbq = function () {n.callMethod ?n.callMethod.apply(n, arguments) : n.queue.push(arguments)};if (!f._fbq) f._fbq = n;n.push = n;n.loaded = !0;n.version = '2.0';n.queue = [];t = b.createElement(e);t.async = !0;t.src = v;s = b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t, s)}(window, document, 'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '" + id + "');fbq('track', 'PageView');");
 
-	FbScript.appendChild(FbContent);
-	FbImg.src = "https://www.facebook.com/tr?id=1490208684611957&ev=PageView&noscript=1";
-	FbImg.style = "display:none";
+	fbScript.appendChild(fbContent);
+	fbImg.src = "https://www.facebook.com/tr?id=1490208684611957&ev=PageView&noscript=1";
+	fbImg.style = "display:none";
 
-	document.body.appendChild(FbScript);
-	document.body.appendChild(FbImg);
+	document.body.appendChild(fbScript);
+	document.body.appendChild(fbImg);
 }
 
 // Push CarbonAds script into <body></body> (src value must be checked)
 function pushCaScript() {
-	var CaScript = document.createElement("script");
+	var caScript = document.createElement("script");
 
-	CaScript.src = "//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=joomlaorg";
-	CaScript.id = "_carbonads_js";
+	caScript.src = "https://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=joomlaorg";
+	caScript.id = "_carbonads_js";
 
-	document.body.appendChild(CaScript);
+	document.body.appendChild(caScript);
 }
 
 // Push AddThisId script into <body></body> (src value must be checked)
 function pushAtIdScript(id) {
-	var AtIdScript = document.createElement("script");
+	var atIdScript = document.createElement("script");
 
-	AtIdScript.src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=" + id;
+	atIdScript.src = "https://s7.addthis.com/js/300/addthis_widget.js#pubid=" + id;
 
-	document.body.appendChild(AtIdScript);
+	document.body.appendChild(atIdScript);
 }
